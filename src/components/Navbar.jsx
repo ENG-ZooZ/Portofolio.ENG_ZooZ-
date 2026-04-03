@@ -44,7 +44,6 @@ function Navbar() {
           text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
         }
 
-        /* --- استايل الروابط --- */
         .nav-link {
           color: #e0e0e0 !important;
           margin: 0 12px;
@@ -144,7 +143,6 @@ function Navbar() {
           filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
         }
 
-        /* Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #0b0b0b; }
         ::-webkit-scrollbar-thumb {
