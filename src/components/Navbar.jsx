@@ -17,78 +17,84 @@ function Navbar() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+
         .custom-navbar {
-          background: ${scrolled ? "rgba(5, 5, 5, 0.9)" : "transparent"};
+          background: ${scrolled ? "rgba(10, 10, 10, 0.95)" : "transparent"};
           backdrop-filter: ${scrolled ? "blur(15px)" : "none"};
-          padding: ${scrolled ? "10px 0" : "20px 0"};
-          border-bottom: ${scrolled ? "1px solid rgba(0, 242, 255, 0.1)" : "none"};
-          transition: all 0.4s ease;
-          z-index: 9999; /* لضمان ظهورها فوق كل العناصر */
+          padding: ${scrolled ? "12px 0" : "20px 0"};
+          border-bottom: ${scrolled ? "1px solid rgba(0, 242, 255, 0.2)" : "none"};
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .navbar-brand {
           color: #fff !important;
-          font-size: 22px;
-          letter-spacing: 2px;
-          text-decoration: none;
-        }
-
-        .cyan-dot {
-          color: #00f2ff;
-          text-shadow: 0 0 10px #00f2ff;
-        }
-
-        .nav-link {
-          color: #bbb !important;
-          margin: 0 5px;
-          font-weight: 500;
-          font-size: 14px;
+          font-size: 24px;
+          letter-spacing: 1.5px;
           text-transform: uppercase;
-          letter-spacing: 1px;
-          transition: 0.3s;
+        }
+
+        .cyan-text {
+          color: #00f2ff;
+          text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+        }
+
+        /* --- استايل الروابط --- */
+        .nav-link {
+          color: #e0e0e0 !important;
+          margin: 0 12px;
+          font-weight: 500;
+          font-size: 15px;
           position: relative;
+          transition: 0.3s;
+          text-align: center; 
         }
 
-        .nav-link:hover, .nav-link.active-link {
-          color: #00f2ff !important;
-        }
-
-        /* خط الـ Hover */
         .nav-link::after {
           content: '';
           position: absolute;
           width: 0;
           height: 2px;
-          bottom: 0;
+          bottom: -2px;
           left: 50%;
           transform: translateX(-50%);
-          background: #00f2ff;
+          background-color: #00f2ff;
           transition: 0.3s;
-          box-shadow: 0 0 8px #00f2ff;
+          box-shadow: 0 0 10px #00f2ff;
         }
 
-        .nav-link:hover::after, .nav-link.active-link::after {
-          width: 60%;
+        .nav-link:hover::after, .nav-link.active::after {
+          width: 80%;
+        }
+
+        .nav-link:hover, .nav-link.active {
+          color: #00f2ff !important;
         }
 
         .btn-cv {
-          border: 1px solid #00f2ff !important;
+          background: transparent !important;
           color: #00f2ff !important;
+          border: 1px solid #00f2ff !important;
+          padding: 10px 28px !important;
           border-radius: 50px !important;
-          padding: 8px 25px !important;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 600;
           transition: 0.4s;
-          text-transform: uppercase;
+          text-align: center;
+          display: inline-block;
         }
 
         .btn-cv:hover {
+          color: #0b0b0b !important;
           background: #00f2ff !important;
-          color: #000 !important;
-          box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+          box-shadow: 0 0 25px rgba(0, 242, 255, 0.5);
+          transform: translateY(-2px);
         }
-
-        /* --- تحسينات الموبايل --- */
         @media (max-width: 991px) {
           .navbar-collapse {
             background: rgba(10, 10, 10, 0.98);
@@ -99,31 +105,58 @@ function Navbar() {
             text-align: center;
           }
 
+
+          .navbar-nav {
+            text-align: center; 
+            align-items: center;
+          }
+
           .nav-item {
-            margin: 15px 0;
+            width: 100%;
+            margin-bottom: 15px;
+          }
+
+          .nav-link {
+            font-size: 18px;
+            padding: 10px 0;
+          }
+
+          .nav-link::after {
+            bottom: 5px;
           }
 
           .btn-cv {
-            display: inline-block;
-            width: 150px;
+            width: 80%; 
             margin-top: 10px;
           }
         }
 
         .navbar-toggler {
-          border: none;
-          outline: none !important;
+          border: none !important;
+          padding: 0;
+        }
+
+        .navbar-toggler:focus {
+          box-shadow: none;
         }
 
         .navbar-toggler-icon {
-          filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+          filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0b0b0b; }
+        ::-webkit-scrollbar-thumb {
+          background: linear-gradient(to bottom, #00f2ff, #0072ff);
+          border-radius: 10px;
         }
       `}</style>
 
       <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
         <div className="container">
           <a className="navbar-brand fw-bold" href="#">
-            ŽØ<span className="cyan-dot">.</span>øŽ
+            Žø<span className="cyan-text">.</span>øŽ
           </a>
 
           <button
@@ -139,29 +172,22 @@ function Navbar() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto align-items-center">
+            <ul className="navbar-nav ms-auto">
               {["home", "about", "skills", "projects", "contact"].map((item) => (
                 <li className="nav-item" key={item}>
                   <a
-                    className={`nav-link ${active === item ? "active-link" : ""}`}
+                    className={`nav-link text-capitalize ${active === item ? "" : ""}`}
                     href={`#${item}`}
                     onClick={() => {
                       setActive(item);
-                      // غلق القائمة تلقائياً بعد الاختيار في الموبايل
-                      if (window.innerWidth < 992) {
-                        document.getElementById('navbarNav').classList.remove('show');
-                      }
-                    }}
-                  >
+                      const navCollapse = document.getElementById('navbarNav');
+                      if (window.innerWidth < 992) navCollapse.classList.remove('show');
+                    }}>
                     {item}
                   </a>
                 </li>
               ))}
-              <li className="nav-item ms-lg-4">
-                <a className="btn btn-cv" href="/path-to-your-cv.pdf" target="_blank">
-                  Download CV
-                </a>
-              </li>
+              <li className="nav-item ms-lg-4 mt-2 mt-lg-0"><a className="btn btn-cv" href="#">CV</a></li>
             </ul>
           </div>
         </div>
