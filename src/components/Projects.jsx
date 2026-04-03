@@ -3,21 +3,21 @@ function Projects() {
     {
       name: "Godzilla Supplement Store",
       tech: ["PHP", "PDO", "MySQL", "Bootstrap 5", "HTML 5", "CSS 3", "Java Script"],
-      img: "./img/godzilla.png",
+      img: "/godzilla.png",
       live: "https://godzilla-store.infinityfree.me",
       github: "https://github.com/zyadsobhy2462007/Godzilla_Store.git"
     },
     {
       name: "Food Lover Restaurant Menu",
       tech: ["HTML 5", "CSS 3", "Java Script", "Bootstrap 5"],
-      img: "./img/restaurant.png",
+      img: "/restaurant.png",
       live: "https://zyadsobhy2462007.github.io/Restaurant/",
       github: "https://github.com/zyadsobhy2462007/Restaurant.git"
     },
     {
       name: "WEXy",
       tech: ["HTML 5", "CSS 3", "Java Script", "Tailwind CSS"],
-      img: "./img/wexy.png",
+      img: "/wexy.png",
       live: "https://zyadsobhy2462007.github.io/WEXy/",
       github: "https://github.com/zyadsobhy2462007/WEXy.git"
     },
@@ -25,21 +25,21 @@ function Projects() {
     {
       name: "FURNI",
       tech: ["HTML 5", "CSS 3", "Java Script", "Bootstrap 5"],
-      img: "./img/furni.png",
+      img: "/furni.png",
       live: "https://zyadsobhy2462007.github.io/Furni/",
       github: "https://github.com/zyadsobhy2462007/Furni.git"
     },
     {
       name: "BIG COLA",
       tech: ["HTML 5", "CSS 3", "Bootstrap 5"],
-      img: "./img/BigCola.png",
+      img: "/BigCola.png",
       live: "https://zyadsobhy2462007.github.io/Big_Cola/",
       github: "https://github.com/zyadsobhy2462007/Big_Cola.git"
     },
     {
       name: "STRICT",
       tech: ["HTML 5", "CSS 3", "Bootstrap 5"],
-      img: "./img/strict.png",
+      img: "/strict.png",
       live: "https://zyadsobhy2462007.github.io/strict/",
       github: "https://github.com/zyadsobhy2462007/strict.git"
     },
