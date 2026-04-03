@@ -75,7 +75,6 @@ const skillData = [
           background: linear-gradient(90deg, transparent, #00f2ff, transparent);
         }
 
-        /* --- السلايدر اللانهائي --- */
         .slider-wrapper {
           position: relative;
           margin-bottom: 100px;
@@ -119,7 +118,6 @@ const skillData = [
           margin-bottom: 10px;
         }
 
-        /* --- كروت المهارات --- */
         .skill-card {
           background: rgba(255, 255, 255, 0.02);
           border: 1px solid rgba(255, 255, 255, 0.05);
@@ -189,7 +187,6 @@ const skillData = [
                         </div>
                     </div>
 
-                    {/* كروت المهارات */}
                     <div className="row justify-content-center">
                         {skillData.map((skill, index) => (
                             <div className="col-lg-5 col-md-6" key={index}>
@@ -209,7 +206,7 @@ const skillData = [
                                             data-value={skill.value}
                                             style={{
                                                 backgroundColor: skill.color,
-                                                color: skill.color // يستخدم في box-shadow
+                                                color: skill.color
                                             }}
                                         ></div>
                                     </div>
