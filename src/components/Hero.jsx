@@ -345,7 +345,7 @@ function Hero() {
             <div className="col-lg-5">
               <div className="avatar-wrap animate__animated animate__zoomIn">
                 <div className="main-avatar">
-                  <img src="/zoz.jpeg" alt="ZooZ" />
+                  <img src="/zooz.jpeg" alt="ZooZ" />
                 </div>
               </div>
             </div>
