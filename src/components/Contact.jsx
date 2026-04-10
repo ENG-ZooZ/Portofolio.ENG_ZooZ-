@@ -232,9 +232,10 @@ function Contact() {
                                             <label className="label-modern">Tell me about the project</label>
                                         </div>
                                         <button type="submit" className="submit-btn-pro" disabled={state.submitting}>
-                                            {state.submitting ? "Sending Signal..." : "Launch Message"}
-                                            <i className="fas fa-paper-plane"></i>
+                                            {state.submitting ? "Sending..." : "Let's Work Together"}
+                                            <i className="fas fa-rocket"></i>
                                         </button>
+
 
                                         {state.succeeded && (
                                             <div className="success-msg">
