@@ -195,9 +195,9 @@ function Hero() {
         }
 
         .main-avatar img {
-          width: 80%;
-          height: 80%;
-          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
           filter: contrast(110%);
           transition: 0.5s ease;
         }
