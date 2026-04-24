@@ -146,16 +146,16 @@ function Footer() {
               <a href="https://wa.me/201033748811" className="footer-social-link whatsapp">
                 <i className="fab fa-whatsapp"></i>
               </a>
-              <a href="https://www.instagram.com/eng._.zooz?igsh=MWJvcWsxb3diMWhidQ%3D%3D&utm_source=qr" className="footer-social-link instagram">
+              <a href="https://www.instagram.com/eng._.zooz" className="footer-social-link instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://www.facebook.com/share/1avtJDgLsF/?mibextid=wwXIfr" className="footer-social-link facebook">
+              <a href="https://www.facebook.com/el.zooz.917733" className="footer-social-link facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://github.com/" className="footer-social-link github">
+              <a href="https://github.com/ENG-ZooZ" className="footer-social-link github">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/zyad-mohamed-sobhy-7ba8b8337?utm_source=share_via&utm_content=profile&utm_medium=member_ios" className="footer-social-link linkedin">
+              <a href="www.linkedin.com/in/zyad-mohamed-sobhy-7ba8b8337" className="footer-social-link linkedin">
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
