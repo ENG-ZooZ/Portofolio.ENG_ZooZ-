@@ -151,8 +151,8 @@ function Hero() {
 
         .avatar-wrap {
           position: relative;
-          width: 380px;
-          height: 380px;
+          width: 300px;
+          height: 300px;
           margin: 0 auto;
           display: flex;
           align-items: center;
