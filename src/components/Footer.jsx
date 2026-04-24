@@ -155,7 +155,7 @@ function Footer() {
               <a href="https://github.com/ENG-ZooZ" className="footer-social-link github">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="www.linkedin.com/in/zyad-mohamed-sobhy-7ba8b8337" className="footer-social-link linkedin">
+              <a href="https://www.linkedin.com/in/zyad-mohamed-sobhy-7ba8b8337" className="footer-social-link linkedin">
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
